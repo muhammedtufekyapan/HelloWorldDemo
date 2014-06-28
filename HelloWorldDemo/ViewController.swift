@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBOutlet var labelDisplay : UILabel = nil
+    
+    
+    var counter = 1
+    
+    
+    @IBAction func buttonPressed(sender : AnyObject) {
+        labelDisplay.text = "Hello World \(counter++)"
+    }
 
 }
 
